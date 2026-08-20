@@ -77,11 +77,6 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.02em;
 }
 .nav-brand img { height: 30px; width: auto; }
-.nav-brand .product-tag {
-  font-weight: 500;
-  color: var(--text-2);
-  margin-left: 2px;
-}
 .nav-links {
   display: flex;
   align-items: center;
