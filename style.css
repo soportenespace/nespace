@@ -193,6 +193,51 @@ section { padding: 88px 0; }
   margin-bottom: 16px;
 }
 
+/* ---- Ecosistema ---- */
+.eco-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.eco-card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 26px 22px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.eco-card.eco-live {
+  border-color: var(--brand-magenta);
+  box-shadow: var(--shadow-glow);
+}
+.eco-card img { width: 52px; height: auto; margin-bottom: 4px; }
+.eco-badge {
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 4px 10px;
+  margin-bottom: 4px;
+}
+.eco-badge-live {
+  color: #fff;
+  background: var(--grad-gestion);
+  border-color: transparent;
+}
+.eco-name { font-family: var(--font-display); font-weight: 600; font-size: 16px; }
+.eco-card p { color: var(--text-2); font-size: 13.5px; margin: 0; }
+.eco-note { text-align: center; color: var(--text-muted); font-size: 13px; margin-top: 28px; }
+
 /* ---- Modalidades ---- */
 .modalidades {
   display: grid;
@@ -297,6 +342,7 @@ footer .wrap {
 @media (max-width: 900px) {
   .features { grid-template-columns: repeat(2, 1fr); }
   .plans { grid-template-columns: repeat(2, 1fr); }
+  .eco-grid { grid-template-columns: repeat(2, 1fr); }
   .modalidades { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
 }
@@ -304,6 +350,7 @@ footer .wrap {
   .nav-links { display: none; }
   .features { grid-template-columns: 1fr; }
   .plans { grid-template-columns: 1fr; }
+  .eco-grid { grid-template-columns: 1fr; }
   .hero { padding: 64px 0 56px; }
   section { padding: 64px 0; }
 }
