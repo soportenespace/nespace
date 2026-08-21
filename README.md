@@ -5,7 +5,8 @@ Sitio público de Nespace (landing, planes, descarga del instalador). Estático 
 - Contenido y copy tomados de `docs/PRODUCT_SPEC.md` y de la pantalla "Acerca de Nespace" de la app (`src/components/Sistema.tsx`), para que digan lo mismo.
 - Marca: assets oficiales copiados de `brand/products/gestion/` (kit "Gestión/ERP"). Tokens de color/tipografía tomados de `brand/tokens.css`.
 - Sin precios todavía (a propósito, mismo criterio que la app) y sin datos de contacto inventados (nada de WhatsApp/email placeholder).
-- El botón "Descargar" apunta a `github.com/soportenespace/nespace/releases` — hace falta crear un Release con el instalador (`Nespace-Setup-<version>.exe`, generado con `npm run dist:win` en el repo principal) para que sirva algo real.
+- El botón "Descargar" apunta directo al asset del Release (`.../releases/download/v0.1.0/Nespace-Setup-0.1.0.exe`), no a la página de Releases — descarga con un solo clic.
+- **Al sacar una versión nueva**: generar el instalador (`npm run dist:win` en el repo principal), crear un Release en GitHub con ese `.exe` adjunto, y actualizar el link de "Descargar" en `index.html` y `gestion.html` a la URL del asset nuevo (`.../releases/download/v<version>/Nespace-Setup-<version>.exe`).
 
 ## Publicar en GitHub Pages con dominio propio
 
